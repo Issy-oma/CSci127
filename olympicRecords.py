@@ -1,7 +1,7 @@
 #CSci 127 Teaching Staff
 #FALL 2021
 #A template for a program that returns olympic world records
-#Modified by:  ADD YOUR NAME HERE
+#Modified by:  Isioma Elodimo
 
 def worldRecord(gender, event):
      """
@@ -19,12 +19,25 @@ def worldRecord(gender, event):
      
      time = 0.0
      
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+   if gender == 'women':
+     if event == 100:
+          return(10.62)
+     elif event == 200:
+          return(21.34)
+     elif event == 400:
+          return(43.03)
+     
+  if gender == 'men':
+     if event == 100:
+          return(9.63)
+     elif event == 200:
+          return(19.30)
+     elif event == 400:
+          return(43.03)
+     else:
+          time = -1
+else: 
+     time = -1
 
      return(time)
 
